@@ -17,7 +17,7 @@ exports.run = async (client, message, args, config) => {
 
         message.channel.send(`You already collected ur daily reward, you can come back and collect it in **${time.hours}h ${time.minutes}m ${time.seconds}s**!`)
     } else {
-    let embed = new Discord.RichEmbed()
+    let embed = new Discord.MessageEmbed()
     .setAuthor(`Daily`, message.author.displayAvatarURL)
     .setColor("GREEN")
     .setDescription(`**Daily Reward**`)
